@@ -9,24 +9,24 @@ OUTPUT = "1"
 INPUT_PU = "8"
 SERIAL = "3"
 
-def GPIO_MODE(pin, mode):
+def GPIO_MODE(pin, mode): # pin mode - INPUT or OUTPUT
   file = open('/sys/devices/virtual/misc/gpio/mode/gpio' +str(pin), 'r+')
 	file.write(mode)
 	file.close()
 
-def GPIO_DATA(pin, data):
+def GPIO_DATA(pin, data): # pin data - LOW or HIGH
 	file = open('/sys/devices/virtual/misc/gpio/pin/gpio' +str(pin), 'r+')
 	file.write (data)
 	file.close()
 
-def GPIO_STATUS(pin):
+def GPIO_STATUS(pin): # read pin status LOW or HIGH and return value as integer
 	file = open('/sys/devices/virtual/misc/gpio/pin/gpio' +str(pin), 'r+')
 	file.seek(0)
 	status = file.read()
 	file.close()
 	return int(status)
 
-def GPIO_PWM(pin, value):
+def GPIO_PWM(pin, value): # write PWM value
 	file = open('/sys/class/leds/pwm' +str(pin) +'/max_brightness', 'r')
 	max_value = int(file.read())
 	file.close()
@@ -36,7 +36,7 @@ def GPIO_PWM(pin, value):
 		value = 0
 	os.system('echo ' +str(value) +' >' +'/sys/class/leds/pwm' +str(pin) +'/brightness')
 
-def GPIO_ADC(pin):
+def GPIO_ADC(pin): # read ADC chanel(pin) value and return as integer
 	file = open('/proc/adc' +str(pin), 'r')
 	value = file.read().split(':')[1].strip()
 	file.close()
