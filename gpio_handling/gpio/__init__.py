@@ -26,7 +26,7 @@ def GPIO_STATUS(pin): # read pin status LOW or HIGH and return value as integer
 	file.close()
 	return int(status)
 
-def GPIO_PWM(pin, value): # set value of PWM chanel 
+def GPIO_PWM(pin, value): # set value of PWM chanel
 	file = open('/sys/class/leds/pwm' +str(pin) +'/max_brightness', 'r')
 	max_value = int(file.read())
 	file.close()
