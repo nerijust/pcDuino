@@ -35,6 +35,12 @@ def GPIO_PWM(pin, value): # write PWM value
 	if value < 0:
 		value = 0
 	os.system('echo ' +str(value) +' >' +'/sys/class/leds/pwm' +str(pin) +'/brightness')
+	
+def GPIO_PWM_read(pin): # read PWM chanel value
+	file = open('/sys/class/leds/pwm' +str(pin) +'/brightness', 'r')
+	value = file.read()
+	file.close()
+	return int(value)
 
 def GPIO_ADC(pin): # read ADC chanel(pin) value and return as integer
 	file = open('/proc/adc' +str(pin), 'r')
