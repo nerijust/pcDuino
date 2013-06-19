@@ -9,12 +9,12 @@ OUTPUT = "1"
 INPUT_PU = "8"
 SERIAL = "3"
 
-def GPIO_MODE(pin, mode): # pin mode - INPUT or OUTPUT
+def GPIO_MODE(pin, mode): # set pin mode - INPUT or OUTPUT
   file = open('/sys/devices/virtual/misc/gpio/mode/gpio' +str(pin), 'r+')
 	file.write(mode)
 	file.close()
 
-def GPIO_DATA(pin, data): # pin data - LOW or HIGH
+def GPIO_DATA(pin, data): # set pin data - LOW or HIGH
 	file = open('/sys/devices/virtual/misc/gpio/pin/gpio' +str(pin), 'r+')
 	file.write (data)
 	file.close()
