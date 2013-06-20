@@ -4,6 +4,7 @@
 # gpio test code for pcduino ( http://www.pcduino.com )
 # 
 # nerijust.com
+# https://github.com/nerijust/pcDuino.git
 
 import time, os
 from gpio import *
