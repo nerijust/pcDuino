@@ -23,7 +23,7 @@ def GPIO_DATA(pin, data): # set pin data - LOW or HIGH
 	file.close()
 
 def GPIO_STATUS(pin): # read pin status LOW or HIGH and return value as integer
-	file = open('/sys/devices/virtual/misc/gpio/pin/gpio' +str(pin), 'r+')
+	file = open('/sys/devices/virtual/misc/gpio/pin/gpio' +str(pin), 'r')
 	file.seek(0)
 	status = file.read()
 	file.close()
