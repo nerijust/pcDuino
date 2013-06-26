@@ -4,6 +4,7 @@
 # Mesure temperature with NTC termistor for pcduino ( http://www.pcduino.com )
 # 
 # nerijust.com
+# https://github.com/nerijust/pcDuino.git
 
 import time, os, math
 from gpio import *
