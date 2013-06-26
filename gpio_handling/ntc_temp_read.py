@@ -12,7 +12,7 @@ from math import log
 
 def loop():
 	V_in = 3.3 #voltage in to voltage divider
-	ADC_resoliution = V_in/4095 #12 bit resolution in V (use chanel A2 - A5)
+	ADC_resoliution = V_in/4096 #12 bit resolution in V (use chanel A2 - A5)
 	R_nom = 1000 #nominal NTC termistor resistance at nominal temperature (25 deg Celsius)
 	R_sec = 1000 #resistance of second resistor in voltage divider
 	T_nom = 25 + 273.15 #nominal temperature in Kelvin
