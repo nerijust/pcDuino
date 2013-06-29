@@ -19,7 +19,7 @@ def loop():
 	B = 3730 #from datasheet device specific constant in Kelvin
 
 	while(1):
-		os.system('clear') #clear terminal window on linux
+		os.system('clear') #clear terminal window on Linux
 		V_out = GPIO_ADC(3)*ADC_resoliution #voltage out of voltage divider
 		R_actual = ((V_in*R_sec) / (V_in - V_out)) - R_sec #actual NTC termistor resistance
 		log_value = R_actual/R_nom #log function value for next formula
