@@ -9,7 +9,7 @@ import time, os
 from gpio import *
 
 def loop():
-    V_in = 3.3 #voltage in to voltage divider
+	V_in = 3.3 #voltage in to voltage divider
 	ADC_resoliution = V_in/4095 #12 bit resolution in V
 	
 	while(1):
