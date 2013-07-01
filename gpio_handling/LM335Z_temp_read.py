@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# ntc_temp_read.py
+# LMZ335Z_temp_read.py
 # Mesure temperature with LM335Z for pcduino ( http://www.pcduino.com )
 # 
 # nerijust.com
