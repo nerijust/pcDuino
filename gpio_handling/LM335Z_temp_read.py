@@ -15,10 +15,10 @@ def loop():
 	while(1):
 		os.system('clear') #clear terminal window on linux
 		V_out = GPIO_ADC(3)*ADC_resoliution #voltage out of voltage divider
-		temp_K = V_out*1000/10
+		temp_K = V_out*1000/10 #actual temperature in Kelvin
 		temp = temp_K - 273.15 #actual temperature in Celsius
 
-		print 'temperature: ', "%.2f" % temp, 'deg C'
+		print 'temperature: ', "%.2f" % temp, 'deg C' #print temperature in terminal window
 		time.sleep(1)      # wait 1 sec.
 		
 def main():
