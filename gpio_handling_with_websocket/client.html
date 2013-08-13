@@ -24,11 +24,12 @@
  
          function send() {
 		 		 
-		    var msg1 = document.getElementById('gpio').value;
-			var msg2 = document.getElementById('status').value;
-            sock.send(msg1+':'+msg2);
+		var msg1 = document.getElementById('gpio').value;
+		var msg2 = document.getElementById('status').value;
+        	sock.send(msg1+':'+msg2);
 			
          };
+         
       </script>
    </head>
    <body>
