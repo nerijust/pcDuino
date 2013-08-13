@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+#
+# nerijust.com
+# https://github.com/nerijust/pcDuino.git
+
+
 import sys
 import os
 from gpio import *
