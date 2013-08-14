@@ -10,7 +10,6 @@ from gpio import *
 from twisted.internet import reactor
 from twisted.python import log
 
- 
 from autobahn.websocket import WebSocketServerFactory, \
                                WebSocketServerProtocol, \
                                listenWS
