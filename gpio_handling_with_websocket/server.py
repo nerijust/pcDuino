@@ -23,9 +23,9 @@ for i in range (14):
 class EchoServerProtocol(WebSocketServerProtocol):
  
     def onMessage(self, msg, binary):
-		a = msg.split(':')[0]
-		b = msg.split(':')[1]
-		GPIO_DATA(a, b)
+		pin = msg.split(':')[0]
+		data = msg.split(':')[1]
+		GPIO_DATA(pin, data)
 		print "sending echo:", msg
 		self.sendMessage(msg, binary)
 		
