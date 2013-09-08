@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>pcDuino visualization</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/text.css" />
+<link rel="stylesheet" href="css/960.css" />
+<link rel="stylesheet" href="css/demo.css" />
+<script src="script.js"></script>
+</head>
+<body>
+<script> setInterval(function (){sock.send("refresh")}, 1000); </script>
+<br>
+  <div class="container_12">
+  <div class="grid_12">
+    <h1>
+      pcDuino visualization
+    </h1>
+  </div>
+  <!-- end .grid_12 -->
+  <div class="clear"></div>
+  <div class="grid_3">
+      <ul class="nav-menu">
+		<li><a href="index.html">Digital outputs</a></li>
+		
+	  </ul>
+	  <br/>
+	  <button type="button" onclick='sock.send("refresh");'> Refresh</button>
+  </div>
+  <!-- end .grid_3 -->
+  
+  
+  <div class="grid_9">
+  
+<table border="1" cellpadding="10">
+<tr>
+<td>GPIO 0</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch0" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch0">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+<td>GPIO 6</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch6" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch6">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+<td>GPIO 12</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch12" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch12">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+</tr>
+<tr>
+<td>GPIO 1</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch1">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+<td>GPIO 7</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch7" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch7">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+<td>GPIO 13</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch13" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch13">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+</tr>
+<tr>
+<td>GPIO 2</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch2">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+<td>GPIO 8</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch8" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch8">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+</tr>
+<tr>
+<td>GPIO 3</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch3">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+<td>GPIO 9</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch9" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch9">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+</tr>
+<tr>
+<td>GPIO 4</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch4" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch4">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+<td>GPIO 10</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch10" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch10">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+</tr>
+<tr>
+<td>GPIO 5</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch5" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch5">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+<td>GPIO 11</td>
+<td>
+	<div id="GPIO0" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch11" checked onclick='send(id);'>
+    <label class="onoffswitch-label" for="myonoffswitch11">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div>
+</td>
+</tr>
+</table>
+  	
+  </div>
+  <!-- end .grid_9 -->
+  
+  
+  <div class="clear"></div>
+  <div class="grid_12">
+          <h1>
+  <a href="http://www.nerijust.com">nerijust.com</a>
+	</h1>
+      </div>
+  <!-- end .grid_12 -->
+  <div class="clear"></div>
+</body>
+</html>
